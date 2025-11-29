@@ -110,24 +110,27 @@ matrice.addEventListener('submit', async (e) => {
     results.innerHTML += `<p>Mean: ${data.mean}</p>`;
     results.innerHTML += `<p>Somme: ${data.sum}</p>`;
 
-    if (data.hasOwnProperty('det') && data.det !== 0){
+    if (data.hasOwnProperty('det')){
         results.innerHTML += `<p>Determinant: ${data.det.toFixed(2)}</p>`;
-        results.innerHTML += `<p>L'inverse: </p>`;
-        for(let i = 0; i < data.rows; i++){
-            for(let j = 0; j < data.columns; j++){
-                results.innerHTML += `${data.inverse[i][j].toFixed(2)}\t`;
-            }
-            results.innerHTML += `<br>`;
+        if(data.hasOwnProperty('inverse')){
+            results.innerHTML += `<p>L'inverse: </p>`;
+            results.innerHTML += renderMatrix(data.inverse);
         }
-        results.innerHTML += `<p>Les valeurs propres: </p>`;
-        for(let i = 0; i < data.vecs_pr.length; i++){
-            results.innerHTML += `V${i+1}: <br>`;
-            for(let j = 0; j < data.vecs_pr[i].length; j++){
-                    results.innerHTML += `${data.vecs_pr[i][j].toFixed(2)}  <br>`;
+        if(Array.isArray(data.vals_pr)){
+            results.innerHTML += `<p>Les valeurs propres: </p>`;
+            results.innerHTML += `<div class="eig-vals">` + data.vals_pr.map(v => (typeof v === 'number') ? v.toFixed(6) : v).join(' ') + `</div>`;
+        }
+        if(Array.isArray(data.vecs_pr)){
+            results.innerHTML += `<p>Les vecteurs propres (colonnes): </p>`;
+            const n = data.vecs_pr.length; 
+            const m = (data.vecs_pr[0] && data.vecs_pr[0].length) ? data.vecs_pr[0].length : 0;
+            for(let k = 0; k < m; k++){
+                results.innerHTML += `v${k+1}: <br>`;
+                for(let i = 0; i < n; i++){
+                    const val = data.vecs_pr[i][k];
+                    results.innerHTML += `${(typeof val === 'number') ? val.toFixed(6) : val}<br>`;
+                }
             }
         }
-            for(let j = 0; j < data.vecs_pr[k].length; j++){
-                    results.innerHTML += `${data.vecs_pr[k][j].toFixed(2)}  <br>`;
-            }
         }
 })
