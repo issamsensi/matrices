@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Définition générale}{2}{}%
+\contentsline {section}{\numberline {2}Types de matrices}{2}{}%
+\contentsline {section}{\numberline {3}Opérations sur les matrices}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Addition}{2}{}%
+\contentsline {subsection}{\numberline {3.2}Multiplication}{2}{}%
+\contentsline {subsection}{\numberline {3.3}Transpose}{2}{}%
+\contentsline {section}{\numberline {4}Déterminant et Inverse}{3}{}%
+\contentsline {subsection}{\numberline {4.1}Cas $2\times 2$}{3}{}%
+\contentsline {subsection}{\numberline {4.2}Inverse}{3}{}%
+\contentsline {section}{\numberline {5}Rang d'une matrice}{3}{}%
+\contentsline {section}{\numberline {6}Systèmes linéaires}{3}{}%
+\contentsline {section}{\numberline {7}Valeurs propres et vecteurs propres}{3}{}%
+\contentsline {section}{\numberline {8}Diagonalisation}{3}{}%
+\contentsline {section}{\numberline {9}Décomposition SVD}{4}{}%

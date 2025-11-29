@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Les matrice</h1>
+    <div id="cour">
+        Les cours:
+        <a href="static/cour/matrices.pdf">coure 1</a>
+        <a href="static/cour/math1.pdf">coure 2</a>
+    </div>
+    
+    <div>
+        <input type="number" name="columns" id="columns" placeholder="columns">
+        <input type="number" name="rows" id="rows" placeholder="rows">
+        <button id="confirm">Enter</button>
+    </div>
+    
+    <form id="matrice"> 
+        
+    </form>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+{% endblock %}

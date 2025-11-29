@@ -1,0 +1,94 @@
+h1{
+    color: green;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#cour{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    margin: 5px 15px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#matrice{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.results{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+
+.mat-table{ border-collapse: collapse; margin: 12px 0;}
+.mat-table td{ padding: 6px 12px; border: 1px solid #ccc; }
+.singular-values, .flatten, .diag{ font-family: 'Courier New', monospace; margin: 6px 0; }
+
+#matrice input[type="number"]{
+    margin: 5px;
+    border-radius: 50%;
+    width: 100px;
+    height: 80px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid hsla(120, 100%, 25%, 0.2);
+
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    margin: 0;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    display: none !important;
+}
+
+div input[type="number"]{
+    
+    width: 120px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 6px;
+    margin: 6px;
+
+}
+button, input[type="submit"]{
+    
+    width: 120px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: hsl(120, 86%, 27%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 6px;
+
+}
