@@ -17,7 +17,7 @@ This project demonstrates a compact matrix analysis app built using Flask on the
 - Eigenvalues and eigenvectors (for square matrices)
 
 ## 🌐 Live Demo
-[matrices](https://issamsensi.pythonanywhere.com/)
+![matrices](https://issamsensi.pythonanywhere.com/)
 
 ## 🛠️ Technologies Used
 - Python 3
